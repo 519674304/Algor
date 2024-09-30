@@ -60,7 +60,7 @@ public class IntervalsInsert {
     }
 }
 
-class Solution {
+class IntervalsInsertSolution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         int left = newInterval[0];
         int right = newInterval[1];
