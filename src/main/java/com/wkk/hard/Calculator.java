@@ -1,4 +1,4 @@
-package com.wkk.medium;
+package com.wkk.hard;
 
 import org.junit.Test;
 
