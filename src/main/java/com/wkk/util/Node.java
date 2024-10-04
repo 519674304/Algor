@@ -1,7 +1,6 @@
 package com.wkk.util;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Node {
     public int val;
@@ -9,21 +8,27 @@ public class Node {
     public Node left;
     public Node right;
     public Node random;
+    public List<Node> neighbors;
+    public Map<Node, Double> edgeMap = new HashMap<>();
+
 
     public Node() {
+        neighbors = new ArrayList<>();
     }
 
     public Node(int x) {
         val = x;
         next = null;
+        this.neighbors = new ArrayList<>();
     }
 
     public Node(int val, Node next) {
         this.val = val;
         this.next = next;
+        this.neighbors = new ArrayList<>();
     }
 
-    public static Node arrayToTreeNode(Integer[] arr) {
+    public static Node arrayToNode(Integer[] arr) {
         if (arr == null || arr.length == 0) return null;
 
         Node root = new Node(arr[0]);

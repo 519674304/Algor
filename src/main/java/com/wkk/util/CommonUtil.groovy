@@ -2,6 +2,14 @@ package com.wkk.util
 
 class CommonUtil {
 
+  public static List<List<String>> arrayToList(String[][] strs) {
+    List<List<String>> resultList = new ArrayList<>();
+    for (String[] array : strs) {
+      resultList.add(new ArrayList<>(Arrays.asList(array)));
+    }
+    resultList
+  }
+
   /**
    * 将整型数组转换为链表
    * @param arr 输入的整型数组

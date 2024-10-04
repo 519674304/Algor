@@ -10,7 +10,7 @@ public class BINodeConnect {
     @Test
     public void test12(){
         Integer[] arr = {1, 2, 3, 4, 5, null, 7};
-        Node root = Node.arrayToTreeNode(arr);
+        Node root = Node.arrayToNode(arr);
         connect(root);
         System.out.println(root);
     }
