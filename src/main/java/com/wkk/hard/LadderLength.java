@@ -1,4 +1,4 @@
-package com.wkk.medium.graph;
+package com.wkk.hard;
 
 import javafx.util.Pair;
 import org.junit.Test;
