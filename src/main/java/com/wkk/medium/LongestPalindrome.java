@@ -26,14 +26,14 @@ public class LongestPalindrome {
         int maxLength = 0;
         String res = s.substring(0, 1);
 
-        for (int i = 1; i < s.length(); i++) {
-            for (int j = i; j < s.length(); j++) {
-                int row = j - i;
-                flagBoard[row][j] = flagBoard[j][j - 1] && s.charAt(row) == s.charAt(j);
+        for (int col = 1; col < s.length(); col++) {
+            for (int j = col; j < s.length(); j++) {
+                int row = j - col;
+                flagBoard[row][j] = flagBoard[row + 1][j - 1] && s.charAt(row) == s.charAt(j);
                 if (flagBoard[row][j]) {
-                    if (maxLength < (i + 1)) {
+                    if (maxLength < (col + 1)) {
                         res = s.substring(row, j + 1);
-                        maxLength = (i + 1);
+                        maxLength = (col + 1);
                     }
                 }
             }

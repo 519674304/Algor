@@ -1,12 +1,10 @@
 package com.test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 public class Short {
     public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
         Scanner in = new Scanner(System.in);
         // 注意 hasNext 和 hasNextLine 的区别
         int length = 0; // 可用木板长度
