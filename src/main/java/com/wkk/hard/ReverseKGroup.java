@@ -18,6 +18,8 @@ public class ReverseKGroup {
         if (k == 0) {
             return head;
         }
+        Integer val = new Integer(12);
+
         ListNode prevH = new ListNode(0, head), prev, lo = prevH;
         while (true) {
             prev = lo;

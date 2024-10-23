@@ -1,4 +1,4 @@
-package com.test;
+package com.wkk.test;
 
 import java.util.*;
 

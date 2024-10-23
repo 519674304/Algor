@@ -1,4 +1,4 @@
-package com.test;
+package com.wkk.test;
 
 import org.junit.Test;
 
